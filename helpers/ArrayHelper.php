@@ -3,21 +3,14 @@
 namespace ada\helpers;
 class ArrayHelper
 {
-    public function test()
-    {
-        echo 1;
-        die;
-    }
-
     /**
      * 从数组or对象中获取数据
      *
      * @param      $array   数组or对象
      * @param      $key     指定要获取的key
      * @param null $default 默认值or以点号分割的数组键名or回调函数
-     * @return mixed|null
-     * 例子：
      *
+     * @return mixed|null
      * @author 王新龙
      * @date   2021-08-20 15:04
      */
@@ -55,6 +48,17 @@ class ArrayHelper
         return $default;
     }
 
+    /**
+     * 检索列，从多行数组or多个对象中，获取某列的值
+     *
+     * @param      $array
+     * @param      $name
+     * @param bool $keepKeys
+     *
+     * @return array
+     * @author 王新龙
+     * @date   2021-08-20 17:03
+     */
     public static function getColumn($array, $name, $keepKeys = TRUE)
     {
         $result = [];
