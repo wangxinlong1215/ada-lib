@@ -1,12 +1,31 @@
 {
-    "name": "ada/lib",
-    "authors": [
-        {
-            "name": "王新龙",
-            "email": "86458969@qq.com"
-        }
-    ],
-    "require": {
-        "php": "^7.1"
+  "name": "ada/lib",
+  "homepage": "https://www.baidu.com",
+  "description": "ada lib for PHP",
+  "keywords": [
+    "ada",
+    "wangxinlong"
+  ],
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/wangxinlong1215/ada-lib",
+    "issues": "https://github.com/wangxinlong1215/ada-lib/issues",
+    "wiki": "https://github.com/wangxinlong1215/ada-lib/wiki"
+  },
+  "authors": [
+    {
+      "name": "王新龙",
+      "email": "86458969@qq.com"
     }
+  ],
+  "minimum-stability": "stable",
+  "type": "library",
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "ada\\helpers\\": "helpers/"
+    }
+  }
 }
