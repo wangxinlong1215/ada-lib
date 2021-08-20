@@ -1,0 +1,12 @@
+{
+    "name": "ada/lib",
+    "authors": [
+        {
+            "name": "王新龙",
+            "email": "86458969@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    }
+}
